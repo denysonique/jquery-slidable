@@ -5,12 +5,18 @@
 
   <title>denysonique/jquery-slidable @ GitHub</title>
 
+  <script type='text/javascript' src='http://code.jquery.com/jquery-1.6.4.min.js'></script>
+  <script type='text/javascript' src='jquery-slidable.js'></script>
   <style type="text/css">
     body {
       margin-top: 1.0em;
       background-color: #0c96a8;
       font-family: Helvetica, Arial, FreeSans, san-serif;
       color: #ffffff;
+    }
+
+    a.link {
+        text-decoration: underline;
     }
     #container {
       margin: 0 auto;
@@ -19,9 +25,9 @@
     h1 { font-size: 3.8em; color: #f36957; margin-bottom: 3px; }
     h1 .small { font-size: 0.4em; }
     h1 a { text-decoration: none }
-    h2 { font-size: 1.5em; color: #f36957; }
-    h3 { text-align: center; color: #f36957; }
-    a { color: #f36957; }
+    h2 { font-size: 1.5em; color: white; }
+    h3 { text-align: center; color: white; }
+    a { color: white; }
     .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
     .download { float: right; }
     pre { background: #000; color: #fff; padding: 15px;}
@@ -49,12 +55,45 @@
       Simple implementation of expandable paragraphs
     </div>
 
-    <h2>Authors</h2>
-<p>denysonique (dennisonic@gmail.com)<br/>      </p>
-<h2>Contact</h2>
-<p>Dennis Prochniak (dennisonic@gmail.com)<br/>      </p>
+    <h2>Demo</h2>
 
+    <p data-expands='more'><a class='link'>Expandable paragraph (click me)</a>
+    <br/>
+    <br/>
 
+    <span id='more'>
+    Lorem ipsum dolor sit amet
+    Some text which slid down
+    Lorem ipsum dolor sit amet
+    Some text which slid down
+    Lorem ipsum dolor sit amet
+    Some text which slid down
+    Lorem ipsum dolor sit amet
+    Some text which slid down
+    Lorem ipsum dolor sit amet
+    Some text which slid down
+    Lorem ipsum dolor sit amet
+    Some text which slid down
+    Lorem ipsum dolor sit amet
+    Some text which slid down
+    Lorem ipsum dolor sit amet
+    Some text which slid down
+    </span>
+    </p>
+    
+   <h2>Usage:</h2> 
+   <pre>
+  &lt;script type='text/javascript' src='http://code.jquery.com/jquery-1.6.4.min.js'&gt;
+  &lt;/script&gt;
+  &lt;script type='text/javascript' src='jquery-slidable.js'&gt;&lt;/script&gt;
+
+  &lt;p data-expands='info'&gt;
+  Paragraph Header
+  &lt;span id="info"&gt;Paragraph text to be exapnded&lt;/span&gt;
+  </p>
+   </pre>
+
+    <pre>$ git clone git://github.com/denysonique/jquery-slidable</pre>
     <h2>Download</h2>
     <p>
       You can download this project in either
